@@ -4,7 +4,6 @@
   "timezone": "Europe/Berlin",
   "minimumReleaseAge": "3 days",
   "lockFileMaintenance": { "enabled": true },
-  "autodiscover": true,
   "rangeStrategy": "bump",
   "packageRules": [
     { "matchUpdateTypes": ["minor", "patch", "digest"], "automerge": true }
