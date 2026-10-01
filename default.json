@@ -2,9 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":semanticCommits", "group:allNonMajor"],
   "timezone": "Europe/Berlin",
-  "schedule": ["before 6am on monday"],
   "minimumReleaseAge": "3 days",
   "lockFileMaintenance": { "enabled": true },
+  "autodiscover": true,
+  "rangeStrategy": "bump",
+  "commitMessagePrefix": "chore:",
   "packageRules": [
     { "matchUpdateTypes": ["minor", "patch", "digest"], "automerge": true }
   ]
